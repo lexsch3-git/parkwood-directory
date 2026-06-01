@@ -17,12 +17,12 @@ function renderTable(data){
 
         tbody.innerHTML += `
         <tr>
-            <td>${r.AcctNo||""}</td>
-            <td>${r.Name||""}</td>
-            <td>${r.HouseNo||""}</td>
-            <td>${r.StreetName||""}</td>
-            <td>${r.Phase||""}</td>
-            <td>${r.Remarks||""}</td>
+            <td data-label="Acct No">${r.AcctNo||""}</td>
+            <td data-label="Name">${r.Name||""}</td>
+            <td data-label="House No">${r.HouseNo||""}</td>
+            <td data-label="Street">${r.StreetName||""}</td>
+            <td data-label="Phase">${r.Phase||""}</td>
+            <td data-label="Remarks">${r.Remarks||""}</td>
         </tr>`;
     });
 
